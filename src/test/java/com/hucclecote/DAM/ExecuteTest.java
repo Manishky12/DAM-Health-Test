@@ -27,7 +27,7 @@ public class ExecuteTest extends Keywords  {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		
-		FileInputStream file = new FileInputStream("/DAM/objectRepository/objectrepository.properties");
+		FileInputStream file = new FileInputStream("C:\\Users\\ampcome\\Documents\\DAM\\objectRepository\\objectrepository.properties");
 		prop = new Properties();
 		prop.load(file);
 		
@@ -35,7 +35,7 @@ public class ExecuteTest extends Keywords  {
 		
 		ArrayList data = new ArrayList();
 		
-		FileInputStream excelfile = new FileInputStream("/DAM/excelData/teststeps.xlsx");
+		FileInputStream excelfile = new FileInputStream("C:\\Users\\ampcome\\Documents\\DAM\\excelData\\teststeps.xlsx");
 		XSSFWorkbook b = new XSSFWorkbook(excelfile);
 		XSSFSheet s = b.getSheet("test");
 		Iterator<Row> itr = s.iterator();

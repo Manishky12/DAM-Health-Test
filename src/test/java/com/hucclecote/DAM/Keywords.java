@@ -69,7 +69,7 @@ public class Keywords {
 	public void selectSlot(String slot_time, String slotconfirmbtn) throws InterruptedException{
 		driver.findElement(By.xpath(prop.getProperty(slot_time))).click();
 		driver.findElement(By.xpath(prop.getProperty(slotconfirmbtn))).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		}
 //	Select Slot of recurring day booking
 	public void selectSlotrec(String slot_time, String slotconfirmbtn) throws InterruptedException{
@@ -78,10 +78,10 @@ public class Keywords {
 		driver.findElement(By.xpath(prop.getProperty(slot_time))).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(prop.getProperty(slotconfirmbtn))).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		}
 	
-//	Insert details
+//	Insert detailsf
 	public void insertDetails(String path, String data) throws InterruptedException{
 		WebElement p= driver.findElement(By.xpath(prop.getProperty(path)));
 		jse.executeScript("arguments[0].click()", p);
